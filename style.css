@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+	--color-bg: rgb(30, 30, 30);
+	--color-fg: rgb(244, 244, 244);
+	--font-body: "Libre Baskerville", serif;
+	--space-xs: 0.25rem;
+	--space-page: 1.75rem;
+	--space-section: 2rem;
+	--inset-callout: 1.2rem;
+	--size-fine: 0.6rem;
+	--measure-wide: 20%;
+	--measure-wider: 25vw;
+}
+
+html {
+	background-color: var(--color-bg);
+	color: var(--color-fg);
+	margin: var(--space-page);
+	font-family: var(--font-body);
+	font-size: 110%;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+header {
+
+	h1 {
+		margin-block-end: var(--space-xs);
+	}
+
+	h2 {
+		font-size: 0.8rem;
+		text-align: center;
+		font-weight: 400;
+
+		span {
+		font-style: italic;
+	}
+	}
+}
+
+p {
+	margin-block-end: 1rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+
+	span {
+		font-style: italic;
+	}
+
+	@media (width > 750px) {
+		margin-inline: var(--measure-wide);
+	}
+
+	@media (width > 1300px) {
+		margin-inline: var(--measure-wider);
+	}
+}
+
+.border {
+	margin-block: var(--space-section);
+	border-inline-start: 0.14rem solid var(--color-fg);
+
+	p {
+		margin-inline-start: var(--inset-callout);
+		margin-inline-end: 0;
+
+		&.bold {
+			font-weight: 700;
+		}
+	}
+
+	@media (width > 750px) {
+		margin-inline: var(--measure-wide);
+	}
+
+	@media (width > 1300px) {
+		margin-inline: var(--measure-wider);
+	}
+}
+
+.notbold {
+	font-weight: 400;
+	font-style: normal;
+}
+
+.divider {
+	font-style: normal;
+	font-size: 130%;
+	margin-inline: var(--space-xs);
+	transform: rotate(180deg);
+}
+
+a:hover p {
+	background-color: rgba(197, 197, 197, 0.564);
+	width: fit-content;
+	transition: 300ms ease-in-out;
+}
+
+.controlbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-block-end: calc(var(--space-section) * 6);
+	margin-block-start: calc(var(--space-section) * 1);
+	border: 0.14rem solid var(--color-fg);
+	padding-inline: 0.5rem;
+	padding-block: calc(var(--space-section) * 0.25);
+
+	p {
+		margin: 0;
+		padding-inline: 0.5rem;
+	}
+
+	@media (width > 750px) {
+		margin-inline: var(--measure-wide);
+	}
+
+	@media (width > 1300px) {
+		margin-inline: var(--measure-wider);
+	}
+}
+
+/* body:last-child {
+	margin-block-end: 4rem;
+}
+
+footer {
+	position: fixed;
+	inset-block-end: 0;
+	inset-inline-start: 0;
+	width: 100%;
+	padding-block: 0.5rem;
+	padding-inline: 0.75rem;
+	background-color: var(--color-fg);
+	color: var(--color-bg);
+	text-align: center;
+
+	h2 {
+		margin-block-end: var(--space-xs);
+		font-size: var(--size-fine);
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: var(--size-fine);
+		line-height: 0.9rem;
+	}
+} */

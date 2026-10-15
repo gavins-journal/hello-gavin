@@ -1,0 +1,11 @@
+.border {
+    border-block-start: 0.14rem solid var(--color-fg);
+    padding-block-start: calc(var(--space-section) / 1.75);
+    padding-block-end: 0.05rem;
+    margin-block-start: calc(var(--space-section) * 1);
+}
+
+.border p {
+    padding-inline: 0.5rem;
+    margin-block-end: 1.5rem;
+}
