@@ -9,3 +9,15 @@
     padding-inline: 0.5rem;
     margin-block-end: 1.5rem;
 }
+
+
+@media (width < 600px) {
+		
+    .border {
+        border-inline-start: none;
+
+        p{
+        margin-inline-start: 0;
+        }
+    }
+}
