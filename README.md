@@ -1,1 +1,1 @@
-#This webpage is my personal journal
+This webpage is my personal journal
