@@ -90,10 +90,13 @@ p {
 }
 
 .divider {
+	display: inline-block;
 	font-style: normal;
 	font-size: 130%;
+	line-height: 0;
 	margin-inline: var(--space-xs);
 	transform: rotate(180deg);
+	vertical-align: -0.15em
 }
 
 a:hover p {
